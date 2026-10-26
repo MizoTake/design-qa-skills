@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -29,7 +30,7 @@ class DistributionTests(unittest.TestCase):
             result = subprocess.run(
                 [sys.executable, "-I", str(ROOT / "scripts" / "validate_package.py"), str(ROOT)],
                 cwd=temporary,
-                env={"PATH": ""},
+                env={**os.environ, "PATH": ""},
                 capture_output=True,
                 text=True,
                 encoding="utf-8",

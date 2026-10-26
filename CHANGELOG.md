@@ -8,5 +8,6 @@
 - Defined the portable design-to-QA contract and evidence-based completion reporting.
 - Added Japanese and English installation/use documentation.
 - Added dependency-free package and portability checks and a cross-platform CI matrix.
+- Kept required operating-system environment variables when testing without optional commands, so Windows Python 3.10 can initialize its random-number source.
 - Added initial design/QA scenarios, a defective persistence fixture, a contract oracle, mutation checks, and a four-condition evaluation protocol.
-- Agent effectiveness comparisons and remote CI execution remain unverified. Distribution license selection is pending.
+- Agent effectiveness comparisons remain unverified. Distribution license selection is pending.
